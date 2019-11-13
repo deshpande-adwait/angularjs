@@ -1,0 +1,22 @@
+<h1>This is main</h1>
+<hr/>
+<input type='text' ng-model='name'/>
+
+<!-- Section START: Custom directives -->
+<hr/>
+<label>Search </label>
+<input type="text" value="Jon Doe"/>
+
+<h4>Search Results</h4>
+<div class="list-group">
+    <search-result person="person" get-address-function="getAddress(aperson)" ng-repeat="person in people">
+    * Search results may change very frequently.
+    </search-result>
+    
+    <!--
+    <div search-result></div>
+    <div class="search-result"></div>
+    -->
+    <!-- directive --><!--: search-result -->    <!-- broke the comment puposfully as the comment itself is a directive -->
+</div>
+<!-- Section END: Custom directives -->
